@@ -9,6 +9,7 @@ import Exam from "./components/pages/exam/Exam";
 import Profile from "./components/pages/Profile";
 import Notice from "./components/pages/Notice";
 import Notification from "./components/pages/Notification";
+import NotFound from "./NotFound";
 
 
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/notice" element={<Notice />} />
         <Route path="/notification" element={<Notification />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
